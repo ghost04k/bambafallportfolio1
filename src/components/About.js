@@ -5,7 +5,7 @@ const About = () => {
         {/* title */}
         <div className="titles">
           <div className="title">à propos</div>
-          <div className="subtitle">Mon histoire</div>
+          <div className="subtitle">SNCF Voyageurs</div>
         </div>
         {/* text */}
         <div className="cols">

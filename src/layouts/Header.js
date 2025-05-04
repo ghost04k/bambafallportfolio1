@@ -7,38 +7,21 @@ const Menu = () => (
     <li className="menu-item current-menu-item menu-item-has-children">
       <a href="#section-started">
         <span className="animated-button">
-          <span>Home</span>
+          <span>Accueil</span>
         </span>
       </a>
-      <ul className="sub-menu">
-        <li className="menu-item current-menu-item">
-          <Link legacyBehavior href="//">
-            <a>Home 1</a>
-          </Link>
-        </li>
-        <li className="menu-item">
-          <Link legacyBehavior href="/index-2">
-            <a>Home 2</a>
-          </Link>
-        </li>
-        <li className="menu-item">
-          <Link legacyBehavior href="/index-3">
-            <a>Home 3</a>
-          </Link>
-        </li>
-      </ul>
     </li>
     <li className="menu-item">
       <a href="#section-about">
         <span className="animated-button">
-          <span>A propos</span>
+          <span>Stratégie de communication</span>
         </span>
       </a>
     </li>
     <li className="menu-item">
       <a href="#section-experience">
         <span className="animated-button">
-          <span>Resume</span>
+          <span>Expériences</span>
         </span>
       </a>
     </li>
@@ -56,7 +39,13 @@ const Menu = () => (
         </span>
       </a>
     </li>
-    
+    <li className="menu-item">
+  <Link href="/creations" scroll={false}>
+    <span className="animated-button">
+      <span>Créations</span>
+    </span>
+  </Link>
+</li>
   </ul>
 );
 
