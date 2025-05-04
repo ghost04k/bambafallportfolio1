@@ -9,7 +9,7 @@ const TypingAnimation = ({ data }) => {
     const typed = new Typed(el.current, {
       strings: data
         ? data
-        : ["speecialiste en communication", "speecialiste en communication", "speecialiste en communication"], // Strings to display
+        : ["specialiste en communication", "specialiste en communication", "specialiste en communication"], // Strings to display
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 100,

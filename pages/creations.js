@@ -1,6 +1,10 @@
 import React from "react";
+import Header from  "@/src/layouts/Header";
 
 const Creation = () => {
+
+    <Header />
+
   return (
     <div className="section creations" id="section-creations">
       <div className="content">

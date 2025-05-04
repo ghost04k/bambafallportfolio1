@@ -131,9 +131,9 @@ export const CodingSkills = () => {
         <div className="skills circles">
           <ul>
             <li>
-              <div className="progress p90">
+              <div className="progress p80">
                 <div className="percentage" />
-                <span>90%</span>
+                <span>80%</span>
                 <div className="slice">
                   <div className="bar"></div>
                   <div className="fill"></div>
@@ -147,9 +147,9 @@ export const CodingSkills = () => {
             
             
             <li>
-              <div className="progress p95">
+              <div className="progress p75">
                 <div className="percentage" />
-                <span>95%</span>
+                <span>75%</span>
                 <div className="slice">
                   <div className="bar"></div>
                   <div className="fill"></div>

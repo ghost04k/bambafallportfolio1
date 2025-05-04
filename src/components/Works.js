@@ -18,7 +18,7 @@ const Works = () => {
           <p>
             J’ai créé des vidéos en partant de la fiche de progression de chaque formation. L’idée est ici de faire des formats très courts et efficaces pour que les stagiaires puissent apprendre en autonomie et progresser à leur rythme.
           </p>
-          <p><strong>Illustration :</strong> une photo des tablettes et des liens qui renvoient à ces tutoriels.</p>
+        
 
           <h3>• Projet de transformation chez SNCF</h3>
           <p>
@@ -30,7 +30,7 @@ const Works = () => {
           <p>
             Cette expérience a renforcé mes compétences en conduite du changement, en gestion des résistances et en mobilisation d’équipes autour d’une vision commune.
           </p>
-          <p><strong>Illustrations :</strong> les photos des jeux de cartes, l’arbre Valda.</p>
+     
 
           <h3>• Accompagnement de projets agents</h3>
           <p>

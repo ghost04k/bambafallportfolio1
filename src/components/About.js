@@ -4,14 +4,14 @@ const About = () => {
       <div className="content">
         {/* title */}
         <div className="titles">
-          <div className="title">à propos</div>
+          <div className="title">Stratégie de communication</div>
           <div className="subtitle">SNCF Voyageurs</div>
         </div>
         {/* text */}
         <div className="cols">
           <div className="col">
             <div className="single-post-text">
-              <h3>Stratégie de communication</h3>
+              
               <p>
                 <strong>Mon approche :</strong> Forgée à la SNCF, elle repose sur une écoute active du terrain pour bâtir une communication efficace et humaine.
               </p>
