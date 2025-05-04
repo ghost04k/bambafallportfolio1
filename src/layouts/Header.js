@@ -11,27 +11,13 @@ const Menu = () => (
         </span>
       </a>
       <ul className="sub-menu">
-        <li className="menu-item current-menu-item">
-          <Link legacyBehavior href="//">
-            <a>Home 1</a>
-          </Link>
-        </li>
-        <li className="menu-item">
-          <Link legacyBehavior href="/index-2">
-            <a>Home 2</a>
-          </Link>
-        </li>
-        <li className="menu-item">
-          <Link legacyBehavior href="/index-3">
-            <a>Home 3</a>
-          </Link>
-        </li>
+     
       </ul>
     </li>
     <li className="menu-item">
       <a href="#section-about">
         <span className="animated-button">
-          <span>About</span>
+          <span>A propos</span>
         </span>
       </a>
     </li>
@@ -45,7 +31,7 @@ const Menu = () => (
     <li className="menu-item">
       <a href="#section-portfolio">
         <span className="animated-button">
-          <span>Portfolio</span>
+          <span>Gestion de projets</span>
         </span>
       </a>
     </li>
@@ -92,7 +78,7 @@ const DaskTopHeader = () => (
     </a>
     {/* download cv button */}
     {/* download cv button */}
-<a href="/CV_2025-03-16_Cheikh_Ahmadou_Bamba_FALL.pdf" 
+<a href="/CV_Com_BF.pdf" 
    className="btn download-cv-btn" 
    download>
   <span className="animated-button">

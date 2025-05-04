@@ -11,43 +11,42 @@ const About = () => {
         <div className="cols">
           <div className="col">
             <div className="single-post-text">
+              <h3>Stratégie de communication</h3>
               <p>
-              Spécialiste en communication interne et externe, je mets mon expertise en gestion de
-projets et création de supports au profit d’équipes dynamiques. En recherche d’un CDD ou
-CDI, j’aspire à booster l’engagement et la cohésion par des stratégies communicantes
-impactantes.
+                <strong>Mon approche :</strong> Forgée à la SNCF, elle repose sur une écoute active du terrain pour bâtir une communication efficace et humaine.
+              </p>
+              <p>
+                <strong>Constat :</strong> Les équipes expriment un fort besoin de lien et de reconnaissance.
+              </p>
+              <p><strong>Mes actions concrètes :</strong></p>
+              <ul>
+                <li><strong>Savoir Fer :</strong> Vidéos métiers valorisant le travail invisible des équipes</li>
+                <li><strong>Accueil des nouveaux :</strong> <span>affiches dynamiques personnalisées et publications internes</span></li>
+                <li><strong>Conviv'UO :</strong> Moments informels mensuels favorisant les échanges</li>
+              </ul>
+              <p>
+                <strong>Résultats mesurables :</strong> +25% d’engagement, amélioration du climat social, forte participation aux événements
+              </p>
+              <p>
+                <strong>Ma méthode :</strong> Identifier les besoins, créer les bons outils, mesurer l’impact avec des KPI
+              </p>
+              <p>
+                <em>Preuve qu’une communication efficace repose sur des actions visibles, concrètes et évaluées régulièrement.</em>
               </p>
             </div>
           </div>
           <div className="col col-full">
-            <div className="single-post-text">
-              <p>
-              Spécialiste en communication interne et externe, je mets mon expertise en gestion de
-projets et création de supports au profit d’équipes dynamiques. En recherche d’un CDD ou
-CDI, j’aspire à booster l’engagement et la cohésion par des stratégies communicantes
-impactantes.
-              </p>
-            </div>
+            <div className="single-post-text"></div>
           </div>
         </div>
         {/* info list */}
         <div className="info-list">
           <ul>
-            <li>
-              <strong>Residence:</strong> Lyon, France
-            </li>
-            <li>
-              <strong>Disponible:</strong> Maintenant
-            </li>
-            <li>
-              <strong>Address:</strong> Lyon 69003, France
-            </li>
-            <li>
-              <strong>Phone:</strong> 06 05 51 03 75
-            </li>
-            <li>
-              <strong>E-mail:</strong> bamba.fall.pro@gmail.com
-            </li>
+            <li><strong>Residence:</strong> Lyon, France</li>
+            <li><strong>Disponible:</strong> Maintenant</li>
+            <li><strong>Address:</strong> Lyon 69003, France</li>
+            <li><strong>Phone:</strong> 06 05 51 03 75</li>
+            <li><strong>E-mail:</strong> bamba.fall.pro@gmail.com</li>
           </ul>
         </div>
         <div className="clear" />
@@ -55,4 +54,5 @@ impactantes.
     </div>
   );
 };
+
 export default About;

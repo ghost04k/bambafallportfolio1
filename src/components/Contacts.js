@@ -17,7 +17,7 @@ const Contacts = () => {
               <input
                 type="text"
                 name="name"
-                placeholder="ej.: Cheikh Ahmadou Bamba FALL"
+                placeholder="ej.: Bamba FALL"
               />
             </div>
             <div className="group-val">
@@ -55,7 +55,7 @@ const Contacts = () => {
         </div>
         {/* contact info */}
         <div className="contact-info">
-          <div className="name">Cheikh Ahmadou Bamba FALL</div>
+          <div className="name">Bamba FALL</div>
           <div className="subname">Spécialiste en communication</div>
           <div className="info-list">
             <ul>

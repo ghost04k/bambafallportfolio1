@@ -21,9 +21,9 @@ const Started = () => {
             </div>
             {/* text */}
             <div className="h-text">
-              Salut,  je suis bamba fall speecialiste en communication interne et externe, je mets mon expertise en gestion de
-              projets et création de supports au profit d’équipes dynamiques. En recherche d’un CDI  j’aspire à booster l’engagement et la cohésion par des stratégies communicantes impactantes.
-
+            Diplômé en communication et fort d'une expertise en gestion de projet, je mets mes compétences stratégiques et créatives au service de l'innovation organisationnelle. Mon parcours académique spécialisé en communication, combiné à mon expérience terrain chez SNCF Voyageurs, m'a permis de développer une approche unique : allier rigueur méthodologique et créativité pour concevoir des plans de communication impactants et piloter des projets primés nationalement.
+ 
+ Aujourd'hui, je cherche à mettre cette double compétence : formation solide en communication et expérience en gestion de projet au service d'une organisation ambitieuse. Mon objectif : concevoir et déployer des stratégies communicantes qui transforment les idées en résultats concrets tout en renforçant la cohésion d'équipe.
             </div>
             {/* button */}
             <a href="#" className="btn">

@@ -1,217 +1,51 @@
-import Isotope from "isotope-layout";
-import { useEffect, useRef, useState } from "react";
-import { useRouter } from "next/router";
-
 const Works = () => {
-  // Référence pour Isotope
-  const isotope = useRef();
-  const [filterKey, setFilterKey] = useState("all");
-  const router = useRouter();
-
-  useEffect(() => {
-    setTimeout(() => {
-      isotope.current = new Isotope(".box-items", {
-        itemSelector: ".box-col",
-        percentPosition: true,
-        masonry: {
-          columnWidth: ".box-col",
-        },
-        animationOptions: {
-          duration: 750,
-          easing: "linear",
-          queue: false,
-        },
-      });
-    }, 1000);
-  }, []);
-
-  useEffect(() => {
-    if (isotope.current) {
-      filterKey === "*"
-        ? isotope.current.arrange({ filter: `*` })
-        : isotope.current.arrange({ filter: `.${filterKey}` });
-    }
-  }, [filterKey]);
-
-  const handleFilterKeyChange = (key) => () => {
-    setFilterKey(key);
-  };
-
-  const activeBtn = (value) => (value === filterKey ? "glitch-effect" : "");
-
-  // Redirige vers la page de détails du work en passant les infos dans la query string
-  const goToWorkDetails = (data) => {
-    router.push({
-      pathname: "/work-details",
-      query: {
-        id: data.id,
-        image: data.image,
-        title: data.title,
-        category: data.category,
-        description: data.description,
-      },
-    });
-  };
-
   return (
     <div className="section works" id="section-portfolio">
       <div className="content">
-        {/* Titres */}
         <div className="titles">
-          <div className="title">Portfolio</div>
-          <div className="subtitle">Latest works</div>
+          <div className="title">Gestion de projets</div>
+          <div className="subtitle"></div>
         </div>
-        {/* Filtre */}
-        <div className="filter-menu">
-          <div className="filters">
-            <div className="btn-group">
-              <label
-                data-text="All"
-                className={`c-pointer ${activeBtn("all")}`}
-                onClick={handleFilterKeyChange("all")}
-              >
-                <input type="radio" name="fl_radio" defaultValue=".all" />
-                All
-              </label>
-            </div>
-            <div className="btn-group">
-              <label
-                className={`c-pointer ${activeBtn("cv1")}`}
-                onClick={handleFilterKeyChange("cv1")}
-                data-text="Référent"
-              >
-                <input type="radio" name="fl_radio" defaultValue=".cv1" />
-                Référent Communication
-              </label>
-            </div>
-            <div className="btn-group">
-              <label
-                className={`c-pointer ${activeBtn("cv2")}`}
-                onClick={handleFilterKeyChange("cv2")}
-                data-text="Chargé"
-              >
-                <input type="radio" name="fl_radio" defaultValue=".cv2" />
-                Chargé de Communication
-              </label>
-            </div>
-            <div className="btn-group">
-              <label
-                className={`c-pointer ${activeBtn("cv3")}`}
-                onClick={handleFilterKeyChange("cv3")}
-                data-text="Président"
-              >
-                <input type="radio" name="fl_radio" defaultValue=".cv3" />
-                Président du CESSEL
-              </label>
-            </div>
-          </div>
+
+        <div className="project-section">
+          <h3>• Digitalisation de la formation continue</h3>
+          <p>
+            Ramener la théorie au pied de la machine, telle est la mission de ce projet. Ce projet du centre de formation Le Marais Sainte-Thérèse a pour but d’intégrer les outils numériques (notamment les tablettes numériques) dans les formations aux métiers industriels et manuels.
+          </p>
+          <p>
+            L’objectif étant ici de créer de l’innovation pédagogique en basculant sur des formations plus hybrides avec leurs contenus. Il a donc été question de réfléchir sur les types de contenus conformes à l’apprentissage manuel. Pour cela, nous sommes partis sur des vidéos tutorielles montrant le geste en commençant par la soudure.
+          </p>
+          <p>
+            J’ai créé des vidéos en partant de la fiche de progression de chaque formation. L’idée est ici de faire des formats très courts et efficaces pour que les stagiaires puissent apprendre en autonomie et progresser à leur rythme.
+          </p>
+          <p><strong>Illustration :</strong> une photo des tablettes et des liens qui renvoient à ces tutoriels.</p>
+
+          <h3>• Projet de transformation chez SNCF</h3>
+          <p>
+            J’ai activement contribué à un projet de transformation au sein de mon unité opérationnelle chez SNCF Voyageurs, visant à mettre en place des équipes auto-organisées pour les agents de la relation client. L’enjeu était de développer leur autonomie tout en réduisant le management hiérarchique, sans compromettre la qualité du service.
+          </p>
+          <p>
+            Mon rôle a consisté à faciliter l’adhésion des équipes en animant des ateliers collaboratifs, en co-construisant des outils innovants et en assurant une communication transparente sur les objectifs et bénéfices du changement. En tant que membre de l’équipe de pilotage, nous avions pour mission de faire comprendre à chaque agent son rôle dans cette évolution, favorisant ainsi un alignement collectif.
+          </p>
+          <p>
+            Cette expérience a renforcé mes compétences en conduite du changement, en gestion des résistances et en mobilisation d’équipes autour d’une vision commune.
+          </p>
+          <p><strong>Illustrations :</strong> les photos des jeux de cartes, l’arbre Valda.</p>
+
+          <h3>• Accompagnement de projets agents</h3>
+          <p>
+            Ces deux dernières années, j'ai accompagné plusieurs agents de la SNCF dans la concrétisation de leurs projets innovants, dont l'un a été retenu pour le Challenge Simplicité Clients Voyageurs.
+          </p>
+          <p>
+            Mon soutien s'est concrétisé à chaque étape : aide à la définition du projet, réalisation des supports opérationnels, cadrage des actions et mobilisation des moyens nécessaires.
+          </p>
+          <p>
+            Ce projet, sélectionné parmi plus de 100 candidatures nationales, visait à simplifier l'expérience clients et agents en alignement avec le programme FIRST. Son déploiement en phase test dans notre gare a démontré l'efficacité de cette approche collaborative.
+          </p>
+          <p>
+            Cette expérience a renforcé mon expertise dans l'accompagnement terrain des porteurs de projets, combinant méthodologie projet et adaptation aux réalités opérationnelles. Elle illustre ma capacité à transformer des idées en solutions concrètes tout en fédérant les équipes autour d'objectifs communs.
+          </p>
         </div>
-        {/* Portfolio items */}
-        <div className="box-items">
-          {/* Work 1 : Référent Communication Interne */}
-          <div className="box-col cv1 all">
-            <div
-              className="box-item"
-              onClick={() =>
-                goToWorkDetails({
-                  id: "cv1",
-                  image: "images/works/work_cv1.jpg",
-                  title: "Référent Communication Interne",
-                  category: "SNCF Voyageurs LYON",
-                  description:
-                    "Déploiement de stratégies de communication interne, création de supports variés (print, vidéos, newsletters) pour optimiser la circulation d’informations et l'engagement des collaborateurs.",
-                })
-              }
-            >
-              <div className="image">
-                <img
-                  src="images/works/work_cv1.jpg"
-                  alt="Référent Communication Interne"
-                />
-                <span className="info">
-                  <span className="centrize full-width">
-                    <span className="vertical-center">
-                      <i className="icon fas fa-images" />
-                    </span>
-                  </span>
-                </span>
-              </div>
-              <div className="desc">
-                <div className="category">Communication Interne</div>
-                <div className="name">Référent Communication Interne</div>
-              </div>
-            </div>
-          </div>
-          {/* Work 2 : Chargé de Communication */}
-          <div className="box-col cv2 all">
-            <div
-              className="box-item"
-              onClick={() =>
-                goToWorkDetails({
-                  id: "cv2",
-                  image: "images/works/work_cv2.jpg",
-                  title: "Chargé de Communication & Responsable Projet Numérique",
-                  category: "Le Marais Saint-Thérèse",
-                  description:
-                    "Digitalisation des formations, création de supports de communication (plaquettes, brochures, affiches), animation des réseaux sociaux et gestion du site web pour renforcer la visibilité numérique.",
-                })
-              }
-            >
-              <div className="image">
-                <img
-                  src="images/works/work_cv2.jpg"
-                  alt="Chargé de Communication"
-                />
-                <span className="info">
-                  <span className="centrize full-width">
-                    <span className="vertical-center">
-                      <i className="icon fas fa-video" />
-                    </span>
-                  </span>
-                </span>
-              </div>
-              <div className="desc">
-                <div className="category">Communication Digitale</div>
-                <div className="name">Chargé de Communication</div>
-              </div>
-            </div>
-          </div>
-          {/* Work 3 : Président du CESSEL */}
-          <div className="box-col cv3 all">
-            <div
-              className="box-item"
-              onClick={() =>
-                goToWorkDetails({
-                  id: "cv3",
-                  image: "images/works/work_cv3.jpg",
-                  title: "Président du CESSEL",
-                  category: "Collectif des Étudiants et Stagiaires",
-                  description:
-                    "Animation d'une équipe de 30 personnes, gestion d'événements et partenariats, mise en place de stratégies de communication pour augmenter la participation de 40%.",
-                })
-              }
-            >
-              <div className="image">
-                <img
-                  src="images/works/work_cv3.jpg"
-                  alt="Président du CESSEL"
-                />
-                <span className="info">
-                  <span className="centrize full-width">
-                    <span className="vertical-center">
-                      <i className="icon fas fa-link" />
-                    </span>
-                  </span>
-                </span>
-              </div>
-              <div className="desc">
-                <div className="category">Management</div>
-                <div className="name">Président du CESSEL</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="clear" />
       </div>
     </div>
   );
